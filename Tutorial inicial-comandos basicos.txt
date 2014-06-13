@@ -1,0 +1,109 @@
+configuracion de GIT: 	
+digitamos los siguientes comandos
+
+- pwd
+
+configuramos nuestro correo:
+- git config --global user.email "juliangils@yahoo.com.co"
+
+configuramos nuestra firma:
+- git config --global user.name "Julian Gil"
+
+contraseña: jg1022359282
+
+creamos una nueva carpeta:
+- mkdir nombre_de_la_carpeta
+
+entramos a la carpeta:
+- cd nombre_de_la_carpeta
+
+inicializamos la carpeta como repositorio con el comando 
+init(se le dice a git que este pendiente a cualquier modificacion que se 
+haga dentro de esesa carpeta):
+- git init
+
+como saber el estado actual de mi repositorio, se hace con el comando status:
+- git status
+
+git nos dice que hubo un movimiento dentro de la carpeta, y nos sugiere guardar 
+dicho documento formalmente dentro de la carpeta, comando add:
+- git add nombre_del_documento.txt
+agregamos el documento al sobre (carpeta)
+
+de nuevo le damos git status. Git nos dice que se van a hacer algunos cambios que se guardaran
+en el historial de git
+
+ahora vamos a sellar nuestro sobre y firmarlo, comando commit:
+- git commit
+se nos abre un editor para poder poner comentarios, presionando la letra i
+despues damos esc dos puntos (:) y escribimos wq, w=write q=quit
+es decir escriba y salga.
+Nos muestra un mensage de lo que se hizo, un creado y guardado
+Es decir es como si hubiesemos sellado un sobre, firmarlo y guardarlo en un archivo.
+
+VAMOS AL DOCUMENTO QUE CREAMOS ->Documento.txt -> escribimos cualquier mensaje -> hola
+
+VOLVEMOS A LA CONSOLA y miramos el status de la carpeta
+- git status
+
+le preguntamos a git que cambio en nuestro archivo, con el comando diff:
+- git diff
+nos muestra que archivo modifique, y mas abajo con un + nos muestra que adicione
+
+entonces para de nuevo aceptar los cambios que hice y meterlos al sobre utilizamos el comando add:
+- git add nombre_del archivo (Documento.txt)
+
+luego sellamos el sobre y lo marcamos, comando commit:
+- git commit
+luego presionamos letra i=insert, escribimos comentario "segundo cambio", esc->:wq
+
+por lo tanto tenemos un nuevo cambio, un nuevo sobre sellado con nuestro apellido, con nuestro 
+correo en el historial de cambios de git
+
+AHORA VEREMOS TODOS LOS CAMBIOS QUE HEMOS HECHO DENTRO DE NUESTRO REPOSITORIO, para eso utilizamos git log
+- git log
+nos muestra todos los sobres sellados, con autor, fecha y comentario de modificacion
+
+HAY UNA FORMA MAS FACIL DE HACER LOS COMMIT
+
+agreguemos mas informacion al archivo Documento.txt
+
+miramos el estado del documento, nos mostrara que ha sido modificado
+podemos mirar las modificaciones que se hicieron con diff
+
+agregamos esas modificaciones de nuevo al sobre 
+- git add Documento.txt
+
+AHORA VAMOS A CERRAR EL SOBRE Y A MARCARLO DE UNA MANERA MAS ABREVIADA:
+- git commint -m "comentario" -> git commint -m "tercer cambio"
+
+vemos el historial de mis cambios
+- git log
+
+RESUMEN
+- git init -> inicializamos la carpeta como repositorio con el comando
+- git config --global user.email "correo"
+- git config --global user.name "nombre"
+- git status -> mirar estado
+- git diff -> muestra las modificaciones
+- git add archivo.txt -> adicionar cambio
+- git commit-> guardar cambios y que e¡queden de forma definitiva en el historial de cambios
+- git commit -m "Mensaje o comentario" -> forma abreviada
+- git add -A -> adicionar al sobre todos los archivos modificados
+- git push -> enviar al servidor la rama en la que estoy situado
+- git pull (NombreRamaServidor)-> actualizar con los ultimos cambios
+- git log - (12344 3huhnm4 m3mbk 43kbk 3 kbk 34)
+- git add '*.txt' -> agregamos todos los archivos
+
+Ramas
+
+- git branch -> miro en que rama estoy
+- git checkout -b NombreRama -> crear rama y situarme en la rama creada
+- git checkout master -> cambiar entre ramas (cambiar de posiciòn)
+- git push NombreRama NombreRamaServidor 
+- git checkout 124344 -> volver a un estado anterior teniendo en cuenta el id del commit 
+
+(merge branch)
+
+
+
