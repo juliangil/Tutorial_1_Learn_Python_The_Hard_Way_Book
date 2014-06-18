@@ -1,0 +1,28 @@
+Para poder instalar DJango:
+
+1. Primero tener instalado Python
+	Descargar Python: https://www.python.org/downloads/ version 2.7
+2. Configurar las variables de entorno para python:
+	click derecho en equipo -> Propiedades del sistema -> Variables de entorno -> Variables del Sistema -> PATH -> Editar -> Copiamos al final la ruta: C:\Python27; C:\Python27\Scripts -> Aceptar
+	hacer lo mismo en la variable de entorno CLASSPATH
+3. Correr un script en python, por medio del Simbolo del Sistema o Power Shell
+4.Descargar Django: https://www.djangoproject.com/download/
+5. Entrar por consola (Simbolo del Sistema o Power Shell) a la carpeta extraida
+	 cd Django-1.4
+	 Ya en la carpeta de instalación de Django, se debe digitar la siguiente instrucción: 
+	 (Debes de tener permisos de administrador)
+	 Windows: python setup.py install
+	 Linux: sudo python setup.py install
+	 
+	Si usas OS X Lion, quizás lo más recomendado sería instalar Django usando pip:
+	Primero, debemos tener Setup Tools para instalarlo, lo descargamos, lo descomprimimos y dentro del directorio (via el terminal)
+
+	Este error se puede presentar en Windows, entonces tambien instalaremos SetupTools
+	importError: no module named setuptools
+	solo abrimos la consola en la misma carpeta y ejecutamos el siguiente comando:
+	(Invoke-WebRequest https://bootstrap.pypa.io/ez_setup.py).Content | python -
+
+	y por ultimo ejecutamos de nuevo el comando:
+	python setup.py install
+
+
